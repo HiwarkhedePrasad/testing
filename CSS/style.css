@@ -1,0 +1,568 @@
+
+body{
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+.header{
+    background-image: url(../Collage_Image/Front_Image.jpg);
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: 100%;
+    width: 100%;
+}
+.container{
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+a:link {
+background-color: transparent;
+color: rgb(255, 255, 255); 
+text-decoration: none;
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar ul li{
+    padding: 6px 3.5% 6px 3.5%;
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+.navbar ul li:hover{
+    color: aliceblue;
+    background-color: rgba(255, 0, 0, 0.926);
+}
+.navbar ul li:first-child {
+    border-radius: 250px 250px;
+}
+.height_extra{
+    height: 60px;
+}
+.slide1{
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 20px;
+    font-size: xx-large;
+    color: white;
+}
+.slide1 h2{
+    animation: slideDown 30s ease-in-out;
+}
+
+@keyframes moveDown {
+0% {
+transform: translateY(-100%); /* Start above the element, hidden */
+}
+50% {
+transform: translateY(0); /* Reach the center */
+}
+100% {
+transform: translateY(0); /* Stay at the center */
+}
+}
+
+.slide1{
+animation: moveDown 5s ease-in-out; 
+animation-fill-mode: forwards; 
+color: whitesmoke;
+background-color: transparent;font-size: 24px; /* Adjust the font size as needed */
+color: #fff; /* Text color */
+text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+.knownMore-collage button{
+    font-size: large;
+    padding: 20px 30px;
+    background-color: #FF4136; /* Red background color */
+    color: #FFFFFF; /* White text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.knownMore-collage button:hover{
+    background-color: #D1342A;
+}
+
+.buttonknownMore{
+    background-color: rgb(241,227,227);
+    font-size:20px;
+    font-weight: bold;
+    padding: 10px 9px;
+}
+.knownMore{
+    padding: 10px 20px;
+    background-color: #0074D9;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.unheader{
+    overflow: hidden;
+    background-color: transparent;
+}
+.logo{
+    padding: 0 0 0 25%;
+    display: flex;
+}
+.name_slide h3{
+    margin-left: 10px;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.logo img:first-child{
+    padding: 0 2% 0 0 ;
+}
+
+.logo-header{
+    height: 80px;
+}
+
+
+
+.english, .marathi {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(0);
+    transition: opacity 1s ease-in-out, transform 5s ease-in-out;
+}
+
+.english{
+    animation: moveUp 2s ease-in-out 5s infinite alternate;
+}
+
+.marathi  {
+    animation: moveDown1 2s ease-in-out 5s infinite alternate;
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
+@keyframes moveDown1 {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.block{
+    display: flex;
+    margin-left: 15%;
+    margin-right: 15%;
+   margin-top: 6%;
+    justify-content: center;
+    align-items: center; 
+}
+
+.block1{
+   width: 300px;
+    height: 270px;
+    cursor: pointer;
+    color: #fff;
+    border: 1px solid black;
+}
+
+.campus_life{
+    background-image: url(../Assect/block_img/campus.png);
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(225,22,34);
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+.gallery{
+    background-image: url(../Assect/block_img/camera_logo.png);
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(241,227,227);
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    color: black;
+}
+
+.news{
+    background-image: url(../Assect/block_img/news.png);
+     background-position: center;
+    background-size: cover;
+    background-color: rgb(241,227,227);
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    color: black;
+}
+.bottom{
+    margin-top: 200px;
+}
+
+.about-gpj{
+    padding-top: 2%;
+    height: 40%;
+}
+.container-about-gpj{
+    display: flex;
+}
+
+.about-collage{
+    height: 70%;
+    overflow: hidden;
+    width: 50%;
+    display: flex;
+    margin: 5% 2%;
+    box-shadow: 7px 6px 12px 3px #969696;
+}
+
+.photo-collage{
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.info-gpj{
+    font-size: large;
+}
+.photo-collage img{
+    max-width: 100%; /* Scale the image width to fit the container */
+    max-height: 100%; /* Scale the image height to fit the container */
+    display: block;
+}
+.about-principal{
+    height: 220px;
+    overflow: hidden;
+    width: 50%;
+    display: flex;
+    margin: 5% 2%;
+    box-shadow: 7px 6px 12px 3px #969696;
+}
+
+.photo-principal{
+  overflow: hidden;
+  width: 100%;
+
+}
+.photo-principal img{
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+}
+.info-principal{
+    font-size: large;
+}
+
+section{
+    background-color: white;
+}
+
+
+.table a:link{
+    color: black;
+}
+/* Apply styles to the entire table */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Remove spacing between table cells */
+}
+
+/* Style the table header (th) cells */
+th {
+    background-color: #f2f2f2;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Style the table data (td) cells */
+td {
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+/* Add hover effect to table rows */
+tr:hover {
+    background-color: #e0e0e0;
+}
+
+.dp-heading{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+.diploma_program{
+    background-color: aqua;
+    height: 50vh;
+}
+
+.horizontal{
+    display: flex;
+    justify-content: center;
+    padding-top: 3%;
+    gap: 10% ;  
+}
+
+.branch-logo img{
+    height: 110px;
+  transition: transform 0.3s ease;
+}
+.branch{
+    display:inline;
+}
+.branch-logo{
+    
+    transition: transform 0.5s ease;
+}
+.branch-logo img:hover{
+    transform: translateY(-20px);
+    transition: transform 0.7s ease;
+    cursor: pointer;
+}
+.branch-name{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+a{
+    color: black;
+}
+
+.if{
+    width: 100%;
+    height: 20px;
+    background-color: aquamarine;
+}
+.uppershowcase{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.lowershowcase{
+    border-top: black 1px solid;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.information-contaion{
+    border: 1px solid black;    
+    background-color: rgb(241,227,227)
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.sl-btn{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px 20px;
+    background-color: #FF4136;
+    color: #FFFFFF;
+    border: none;
+    border-top-right-radius: 7px;
+    cursor: pointer;
+    
+    transition: 0.5s ease;
+}
+
+
+.sl-btn:hover{
+    background-color: #e73930;
+    color: white;
+}
+
+
+#photo-principal-broad-info {
+    float: right; 
+    margin-top: 0;
+  }
+  
+  #photo-principal-broad-info img {
+    width: 350px;
+    height: 400px;
+  }
+  .principal-broad-info p {
+    margin-left: 20px;
+    text-align: left; /* Align text to the left */
+    margin-bottom: 10px; /* Add some spacing between paragraphs */
+  }
+  
+  /* Clear the float to prevent issues with subsequent elements */
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+
+.collage-broad-info p{
+     margin-left: 20px;
+     text-align: left;
+     margin-bottom: 10px;
+}
+.buttonVIsionMission {
+    text-align: center; /* Center the buttons horizontally */
+}
+
+.buttonVIsionMission button {
+    padding: 10px 20px; /* Adjust the padding for your desired button size */
+    margin: 5px; /* Adjust the margin to control the gap between buttons */
+    background-color: #0074D9; /* Button background color */
+    color: #FFFFFF; /* Button text color */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Add some rounded corners to the buttons */
+    cursor: pointer; /* Change cursor to a pointer on hover */
+}
+
+/* Optional: Hover effect */
+.buttonVIsionMission button:hover {
+    background-color: #0056b3; /* Change background color on hover */
+}
+
+
+
+
+
+
+@media (max-width: 600px) {
+    .navbar {
+        position: fixed; /* Fixed position for the top of the page */
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8); /* Background color for better visibility */
+        justify-content: flex-start; /* Align items to the start (left) */
+    }
+
+        .navbar ul {
+            flex-direction: column; /* Display items vertically for small screens */
+            display: none;
+        }
+
+            .navbar ul li {
+                padding: 10px; /* Increase padding for touch-friendly spacing */
+                font-size: 15px; /* Adjust font size for smaller screens */
+                border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Add borders between items */
+            }
+
+                .navbar ul li:last-child {
+                    border-bottom: none; /* Remove border from the last item */
+                }
+
+    .slide1 {
+        font-size: 24px;
+        padding: 20px;
+    }
+
+        .slide1 h2 {
+            font-size: 18px;
+            text-align: center;
+        }
+
+    .block {
+        margin: 0 0 0 0;
+        height: 25%;
+    }
+
+    .block1 p {
+        margin-top: 70px;
+        font-size: 12px;
+    }
+
+    .block1 {
+        height: 120px;
+    }
+
+
+    .table {
+        overflow-x: scroll;
+        width: 100%;
+    }
+
+    th, td {
+        white-space: nowrap;
+    }
+
+
+        td:first-child {
+            font-weight: bold;
+            background-color: #f2f2f2;
+        }
+
+        td:nth-child(even) {
+            background-color: #f2f2f2;
+            width: 75%;
+        }
+
+    .branch-logo img {
+        height: 40px;
+        transition: 0.5s ease;
+    }
+
+    .branch-name {
+        font-size: 7px;
+    }
+
+    .horizontal {
+        gap: 10%;
+        padding-bottom:10%;
+    }
+
+    .diploma_program {
+        height:50%;
+    }
+    .dp-heading {
+        font-size: 45px;
+        text-shadow: 7px 5px 13px rgba(0, 0, 0, 0.5);
+        font-weight:200;
+    }
+
+    .container-about-gpj{
+        display:grid;
+    }
+    .about-collage {
+        overflow: hidden;
+        width: 100%;
+        height:auto;
+    }
+    .about-principal{
+        width:100%;
+    }
+    .knownMore-collage button{
+        font-size:10px;
+        padding:3px 2px;
+    }
+    body {
+        background-color: rgb(241,227,227);
+    }
+    .about-gpj {
+        overflow: hidden;
+    }
+}
